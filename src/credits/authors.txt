@@ -1,0 +1,4 @@
+
+AUTHORS
+
+* Holger Woltersdorf (https://github.com/hollodotme)
