@@ -16,6 +16,7 @@ build: dcup .compile dcdown
 .PHONY: build
 
 .compile:
+	mkdir -p ./bin
 	$(DOCKER_COMPOSE_EXEC_COMMAND) -T vlang v -o /repo/bin/main /repo/src/main.v
 	printf "\n\e[32m✔ Build successful! Artifact exported to bin/main\e[0m\n\n"
 .PHONY: compile
