@@ -16,7 +16,7 @@ build: dcup .compile dcdown
 .PHONY: build
 
 .compile:
-	$(DOCKER_COMPOSE_EXEC_COMMAND) vlang v -o /repo/bin/main /repo/src/main.v
+	$(DOCKER_COMPOSE_EXEC_COMMAND) -T vlang v -o /repo/bin/main /repo/src/main.v
 	printf "\n\e[32m✔ Build successful! Artifact exported to bin/main\e[0m\n\n"
 .PHONY: compile
 
@@ -25,7 +25,7 @@ test: dcup .runtests dcdown
 .PHONY: test
 
 .runtests:
-	$(DOCKER_COMPOSE_EXEC_COMMAND) vlang v -stats test /repo
+	$(DOCKER_COMPOSE_EXEC_COMMAND) -T vlang v -stats test /repo
 .PHONY: exectests
 
 ## This help screen
