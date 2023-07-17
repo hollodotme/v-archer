@@ -25,7 +25,7 @@ test: dcup .runtests dcdown
 .PHONY: test
 
 .runtests:
-	$(DOCKER_COMPOSE_EXEC_COMMAND) vlang v -stats test /repo
+	$(DOCKER_COMPOSE_EXEC_COMMAND) -T vlang v -stats test /repo
 .PHONY: exectests
 
 ## This help screen
