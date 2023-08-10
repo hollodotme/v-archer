@@ -1,0 +1,6 @@
+name: 'Default (V)'
+statement_delimiter: "\n"
+comment_line_start: '//'
+comment_block_start: '/**'
+comment_block_end: '*/'
+module_identifier: 'directory'

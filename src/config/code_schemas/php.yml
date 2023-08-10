@@ -1,0 +1,6 @@
+name: 'PHP'
+statement_delimiter: ';'
+comment_line_start: '//'
+comment_block_start: '/**'
+comment_block_end: '*/'
+module_identifier: 'directory'
