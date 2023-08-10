@@ -30,5 +30,6 @@ jobs:
         with:
           name: Version ${{ steps.data.outputs.version }}
           body_path: CHANGELOG.md
+          files: ./bin/v-archer
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
